@@ -1,0 +1,143 @@
+/*Basics*/
+body {
+    background-color: #1D1D1D;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    margin: 5% 10% 5% 10%;
+    color: white;
+    border: 50px solid #2E2E2E;
+    padding: 20px;
+}
+
+
+
+/**************************nav**********************/
+.container {
+    width: 90%;
+    margin: 0 auto;
+    color: white;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo {
+    float: left;
+    padding: 10px 0;
+    color: white;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+   display: inline-block;
+   margin-left: 70px;
+   padding-top: 23px;
+   position: relative;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+}
+
+nav a:hover {
+    color:white;
+
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+header {
+    background:#2E2E2E;
+}
+/***********************end nav***************************/
+
+h1 {
+    color: white;
+}
+
+h3 {
+    font-size: 400% ;
+}
+
+/*link*/
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+
+/*review*/
+#banner {
+    width: 100%;
+    height: 20vw;
+}
+
+#poster {
+    width : 20%;
+    height: 20%;
+}
+
+#stars {
+    width : 50% ;
+    height: 50%;
+}
+
+iframe {
+    width: 50%;
+    height: 20vw;
+}
+
+/*---------------------------media queries--------------------*/
+@media screen and (min-width: 999px) {
+
+}
+
+@media screen and (max-width: 998px) and (min-width: 400px) {
+    header {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 399px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
