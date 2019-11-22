@@ -1,0 +1,450 @@
+<html>
+    <head>
+        <title>Grace's 19F Schedule</title>
+
+        <style>
+            .row {
+                clear: both;
+            }
+    
+            .box {
+                text-align: center;
+                border: 1px solid black;
+                float: left;
+                height: 17px;
+                overflow: hidden;
+                width: 15%;
+            }
+    
+            .boxtop {
+                text-align: center;
+                border: 1px solid black;
+                border-bottom-style: none;
+                float: left;
+                height: 18px;
+                overflow: hidden;
+                width: 15%;
+            }
+    
+            .boxmid {
+                text-align: center;
+                border: 1px solid black;
+                border-top-style: none;
+                border-bottom-style: none;
+                float: left;
+                height: 19px;
+                overflow: hidden;
+                width: 15%;
+            }
+    
+            .boxbot {
+                text-align: center;
+                border: 1px solid black;
+                border-top-style: none;
+                float: left;
+                height: 18px;
+                overflow: hidden;
+                width: 15%;
+            }
+    
+            .timeday {
+                background-color: darkgrey;
+                font-weight: bold;
+            }
+    
+            .CAL103 {
+                background-color: #8FF675;
+            }
+    
+            .CS115 {
+                background-color: #8FF675;
+            }
+    
+            .MA121 {
+                background-color: #8FF675;
+            }
+    
+            .PEP111 {
+                background-color: #8FF675;
+            }
+    
+            .CS146 {
+                background-color: #8FF675;
+            }            
+    
+        </style>
+
+
+
+    </head>
+        <body>  
+            <h1>Interactive Schedule </h1>
+            <p>
+                CAL 103 Writing & Communcications Collquialism 
+                <input type="checkbox" id="cbCAL103" title='CAL103' onchange="checkBox(this)" checked/>
+                <input type="color" id="colorCAL103" value='#8FF675' title='CAL103' onchange="colorInput(this)"/>
+        
+                <br> CS 115 Intro to Computer Science
+                <input type="checkbox" id="cbCS115" title='CS115' onchange="checkBox(this)" checked/>
+                <input type="color" id="colorCS115" value='#8FF675' title='CS115' onchange="colorInput(this)"/>
+        
+                <br>CS 146 Intro to Web Programming & Web Development
+                <input type="checkbox" id="cbCS146" title='CS146' onchange="checkBox(this)" checked/>
+                <input type="color" id="colorCS146" value='#8FF675' title='CS146' onchange="colorInput(this)"/>
+        
+                <br> MA 121 Differential Calculus
+                <input type="checkbox" id="cbMA121" title='MA121' onchange="checkBox(this)" checked/>
+                <input type="color" id="colorMA121" value='#8FF675' title='MA121' onchange="colorInput(this)"/>
+        
+                <br> PEP 111 Mechanics
+                <input type="checkbox" id="cbPEP111" title='PEP111' onchange="checkBox(this)" checked/>
+                <input type="color" id="colorPEP111" value='#8FF675' title='PEP111' onchange="colorInput(this)"/>
+            </p>
+        
+        
+        
+            <div class='row'>
+                <div class='box timeday'>Time</div>
+                <div class='box timeday'>Monday</div>
+                <div class='box timeday'>Tuesday</div>
+                <div class='box timeday'>Wednesday</div>
+                <div class='box timeday'>Thursday</div>
+                <div class='box timeday'>Friday</div>
+            </div>
+                
+                
+            <div class='row'>
+                <div class='box timeday'>8:00am</div>
+                <div class='box empty'></div>
+                <div class='boxtop PEP111'>PEP 111</div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+            </div>
+            
+            <div class='row'>
+                <div class='box timeday'>8:15am</div>
+                <div class='box empty'></div>
+                <div class='boxmid PEP111'></div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+            </div>
+        
+            <div class='row'>
+                <div class='box timeday'>8:30am</div>
+                <div class='box empty'></div>
+                <div class='boxmid PEP111'></div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+            </div>
+        
+            <div class='row'>
+                <div class='box timeday'>8:45am</div>
+                <div class='box empty'></div>
+                <div class='boxmid PEP111'></div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+            </div>
+        
+            <div class='row'>
+                <div class='box timeday'>9:00am</div>
+                <div class='boxtop CAL103'>CAL 103</div>
+                <div class='boxmid PEP111'></div>
+                <div class='boxtop CAL103'>CAL 103</div>
+                <div class='box empty'></div>
+                <div class='boxtop CAL103'>CAL 103</div>
+            </div>
+        
+            <div class='row'>
+                <div class='box timeday'>9:15am</div>
+                <div class='boxmid CAL103'></div>
+                <div class='boxmid PEP111'></div>
+                <div class='boxmid CAL103'></div>
+                <div class='box empty'></div>
+                <div class='boxmid CAL103'></div>
+            </div>
+        
+            <div class='row'>
+                <div class='box timeday'>9:30am</div>
+                <div class='boxmid CAL103'></div>
+                <div class='boxmid PEP111'></div>
+                <div class='boxmid CAL103'></div>
+                <div class='box empty'></div>
+                <div class='boxmid CAL103'></div>
+            </div>
+        
+            <div class='row'>
+                <div class='box timeday'>9:45am</div>
+                <div class='boxbot CAL103'></div>
+                <div class='boxbot PEP111'></div>
+                <div class='boxbot CAL103'></div>
+                <div class='box empty'></div>
+                <div class='boxbot CAL103'></div>
+            </div>
+        
+            <div class='row'>
+                <div class='box timeday'>10:00am</div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+            </div>
+        
+            <div class='row'>
+                <div class='box timeday'>10:15am</div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+            </div>
+        
+            <div class='row'>
+                <div class='box timeday'>10:30am</div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+            </div>
+        
+            <div class='row'>
+                <div class='box timeday'>10:45am</div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+            </div>
+        
+            <div class='row'>
+                <div class='box timeday'>11:00am</div>
+                <div class='boxtop CS115'>CS 115</div>
+                <div class='boxtop MA121'>MA 121</div>
+                <div class='boxtop CS115'>CS 115</div>
+                <div class='boxtop MA121'>MA 121</div>
+                <div class='boxtop CS115'>CS 115</div>
+            </div>
+        
+            <div class='row'>
+                <div class='box timeday'>11:15am</div>
+                <div class='boxmid CS115'></div>
+                <div class='boxmid MA121'></div>
+                <div class='boxmid CS115'></div>
+                <div class='boxmid MA121'></div>
+                <div class='boxmid CS115'></div>
+            </div>
+        
+            <div class='row'>
+                <div class='box timeday'>11:30am</div>
+                <div class='boxmid CS115'></div>
+                <div class='boxmid MA121'></div>
+                <div class='boxmid CS115'></div>
+                <div class='boxmid MA121'></div>
+                <div class='boxmid CS115'></div>
+            </div>
+            
+            <div class='row'>
+                <div class='box timeday'>11:45am</div>
+                <div class='boxbot CS115'></div>
+                <div class='boxbot MA121'></div>
+                <div class='boxbot CS115'></div>
+                <div class='boxbot MA121'></div>
+                <div class='boxbot CS115'></div>
+            </div>
+        
+            <div class='row'>
+                <div class='box timeday'>12:00pm</div>
+                <div class='boxtop MA121'>MA 121</div>
+                <div class='box empty'></div>
+                <div class='boxtop MA121'>MA 121</div>
+                <div class='box empty'></div>
+                <div class='boxtop MA121'>MA 121</div>
+            </div>
+        
+            <div class='row'>
+                <div class='box timeday'>12:15pm</div>
+                <div class='boxmid MA121'></div>
+                <div class='box empty'></div>
+                <div class='boxmid MA121'></div>
+                <div class='box empty'></div>
+                <div class='boxmid MA121'></div>
+            </div>
+        
+            <div class='row'>
+                <div class='box timeday'>12:30pm</div>
+                <div class='boxmid MA121'></div>
+                <div class='box empty'></div>
+                <div class='boxmid MA121'></div>
+                <div class='box empty'></div>
+                <div class='boxmid MA121'></div>
+            </div>
+        
+            <div class='row'>
+                <div class='box timeday'>12:45pm</div>
+                <div class='boxbot MA121'></div>
+                <div class='box empty'></div>
+                <div class='boxbot MA121'></div>
+                <div class='box empty'></div>
+                <div class='boxbot MA121'></div>
+            </div>
+        
+            <div class='row'>
+                <div class='box timeday'>1:00pm</div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+            </div>
+        
+            <div class='row'>
+                <div class='box timeday'>1:15pm</div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+            </div>
+        
+            <div class='row'>
+                <div class='box timeday'>1:30pm</div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+            </div>
+        
+            <div class='row'>
+                <div class='box timeday'>1:45pm</div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+            </div>
+        
+            <div class='row'>
+                <div class='box timeday'>2:00pm</div>
+                <div class='boxtop PEP111'>PEP 111</div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+                <div class='boxtop PEP111'>PEP 111</td>
+            </div>
+        
+            <div class='row'>
+                <div class='box timeday'>2:15pm</div>
+                <div class='boxmid PEP111'></div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+                <div class='boxmid PEP111'></div>
+            </div>
+        
+            <div class='row'>
+                <div class='box timeday'>2:30pm</div>
+                <div class='boxmid PEP111'></div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+                <div class='boxmid PEP111'></div>
+            </div>
+        
+            <div class='row'>
+                <div class='box timeday'>2:45pm</div>
+                <div class='boxbot PEP111'></div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+                <div class='boxbot PEP111'></div>
+            </div>
+        
+            <div class='row'>
+                <div class='box timeday'>3:00pm</div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+            </div>
+        
+            <div class='row'>
+                <div class='box timeday'>3:15pm</div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+            </div>
+        
+            <div class='row'>
+                <div class='box timeday'>3:30pm</div>
+                <div class='box empty'></div>
+                <div class='boxtop CS146'>CS 146</div>
+                <div class='box empty'></div>
+                <div class='boxtop CS146'>CS 146</div>
+                <div class='box empty'></div>
+            </div>
+        
+            <div class='row'>
+                <div class='box timeday'>3:45pm</div>
+                <div class='box empty'></div>
+                <div class='boxmid CS146'></div>
+                <div class='box empty'></div>
+                <div class='boxmid CS146'></div>
+                <div class='box empty'></div>
+            </div>
+        
+            <div class='row'>
+                <div class='box timeday'>4:00pm</div>
+                <div class='box empty'></div>
+                <div class='boxmid CS146'></div>
+                <div class='box empty'></div>
+                <div class='boxmid CS146'></div>
+                <div class='box empty'></div>
+            </div>
+        
+            <div class='row'>
+                <div class='box timeday'>4:15pm</div>
+                <div class='box empty'></div>
+                <div class='boxmid CS146'></div>
+                <div class='box empty'></div>
+                <div class='boxmid CS146'></div>
+                <div class='box empty'></div>
+            </div>
+        
+            <div class='row'>
+                <div class='box timeday'>4:30pm</div>
+                <div class='box empty'></div>
+                <div class='boxbot CS146'></div>
+                <div class='box empty'></div>
+                <div class='boxbot CS146'></div>
+                <div class='box empty'></div>
+            </div>
+        
+            <div class='row'>
+                <div class='box timeday'>4:45pm</div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+            </div>
+        
+            <div class='row'>
+                <div class='box timeday'>5:00pm</div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+                <div class='box empty'></div>
+            </div>    
+        
+        </body>
+</html>
