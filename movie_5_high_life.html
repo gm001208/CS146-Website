@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        KLANG | High Life
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="review.css"/>
+    <script src="script.js"></script>
+</head>
+<body>
+    <main>
+            <header>
+                    <div class="container">
+                        <nav>
+                            <ul>
+                                <img id="logo" src="images/logo.png" alt="Logo" />
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="all_reviews.html">Reviews</a></li>
+                                <li><a href="genres.html">Genres</a></li>
+                                <li><a href="about_us.html">About Us</a></li>
+                                <li>
+                                    <!--login-->
+        
+                                    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+                                    
+                                    <div id="id01" class="modal">
+                                    
+                                    <form class="modal-content animate" action="/action_page.php" method="post">
+                                        <div class="imgcontainer">
+                                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                        </div>
+                                    
+                                        <div class="container">
+                                        <label for="uname"><b>Username</b></label>
+                                        <input type="text" placeholder="Enter Username" name="uname" required>
+                                    
+                                        <label for="psw"><b>Password</b></label>
+                                        <input type="password" placeholder="Enter Password" name="psw" required>
+                                            
+                                        <button type="submit"><a href="index.html">Login!</a></button>
+                                        </div>
+                                    
+                                        <div class="container" style="background-color:#f1f1f1">
+                                        <center><button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button></center>
+                                        </div>
+                                    </form>
+                                    </div>
+                                    <!--end-->
+        
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </header>
+
+        <img id="banner" src="images/high_life_banner.jpg" alt="High Life Banner" /></a>
+        <p>
+        <img id="poster" src="images/high_life.jpg" alt="High Life" /></a> 
+        <h1>
+            High Life
+        </h1>
+        <div> <!--basic stats-->
+            <br> Release Date: April 12, 2019
+            <br> Studio: A24
+            <br> Genre: <a href="genres.html">Science Fiction</a>
+            <br> Run time: 1hr 53min
+            <br> Rated: R 
+        </div>
+        <p>
+            Monte and his baby daughter are the last survivors of a damned and dangerous 
+            mission to the outer reaches of the solar system. They must now rely on each 
+            other to survive as they hurtle toward the oblivion of a black hole.
+
+        </p>
+        </p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p><center><img id="stars" src="images/3.5 out of 5.png"/></center></p><!---insert interactive stars-->
+        <br>
+
+        <center>
+        <p id="trailer"><iframe  src="https://www.youtube.com/embed/AtOwfo1ypOw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe></p>/center> 
+        <center><a href="https://itunes.apple.com/us/movie/high-life/id1456868201">Stream Here</a></center> 
+
+        <h2>Reviews</h2>
+        <p>
+        Lily Haynes:
+        This is another one of those uncomfortable movies for me. The sets are pretty cool 
+        for it being a mid-tier budget film in space. The idea of love on a remote spaceship 
+        filled death row inmates is a cool concept. But some of the parts (you’ll know when 
+        you see them).
+        </p>
+            <!--likes-->
+            <div class="rating">
+                    <!-- Thumbs up -->
+                    <div class="like grow">
+                        <i class="fa fa-thumbs-up fa-3x like" aria-hidden="true"></i>
+                    </div>
+                    <!-- Thumbs down -->
+                    <div class="dislike grow">
+                        <i class="fa fa-thumbs-down fa-3x like" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+        Write a review </br>
+        <!--interactive stars-->
+        <span class="rating_stars rating_0">
+                <span class='s' data-low='0.5' data-high='1'><i class="fa fa-star-o"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star"></i></span>
+                <span class='s' data-low='1.5' data-high='2'><i class="fa fa-star-o"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star"></i></span>
+                <span class='s' data-low='2.5' data-high='3'><i class="fa fa-star-o"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star"></i></span>
+                <span class='s' data-low='3.5' data-high='4'><i class="fa fa-star-o"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star"></i></span>
+                <span class='s' data-low='4.5' data-high='5'><i class="fa fa-star-o"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star"></i></span>
+                                      
+                <span class='r r0_5' data-rating='1' data-value='0.5'></span>
+                <span class='r r1' data-rating='1' data-value='1'></span>
+                <span class='r r1_5' data-rating='15' data-value='1.5'></span>
+                <span class='r r2' data-rating='2' data-value='2'></span>
+                <span class='r r2_5' data-rating='25' data-value='2.5'></span>
+                <span class='r r3' data-rating='3' data-value='3'></span>
+                <span class='r r3_5' data-rating='35' data-value='3.5'></span>
+                <span class='r r4' data-rating='4' data-value='4'></span>
+                <span class='r r4_5' data-rating='45' data-value='4.5'></span>
+                <span class='r r5' data-rating='5' data-value='5'></span>
+              </span>
+              
+              
+              
+                      <br>
+
+
+
+
+
+        <textarea rows="10" cols="40" id="myText" placeholder="Write a Review" value =''></textarea><br>
+
+        <input type='submit' onclick="myFunction()"></input>
+
+        <p id="demo"></p>
+
+
+
+    </main>
+</body>
+</html>
