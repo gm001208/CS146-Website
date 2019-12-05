@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        KLANG | Genres
+    </title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="script.js"></script>
+</head>
+<body>
+    <main>
+            <header>
+                    <div class="container">
+                        <nav>
+                            <ul>
+                                <img id="logo" src="images/logo.png" alt="Logo" />
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="all_reviews.html">Reviews</a></li>
+                                <li><a href="genres.html">Genres</a></li>
+                                <li><a href="about_us.html">About Us</a></li>
+                                <li>
+                                    <!--login-->
+        
+                                    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+                                    
+                                    <div id="id01" class="modal">
+                                    
+                                    <form class="modal-content animate" action="/action_page.php" method="post">
+                                        <div class="imgcontainer">
+                                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                        </div>
+                                    
+                                        <div class="container">
+                                        <label for="uname"><b>Username</b></label>
+                                        <input type="text" placeholder="Enter Username" name="uname" required>
+                                    
+                                        <label for="psw"><b>Password</b></label>
+                                        <input type="password" placeholder="Enter Password" name="psw" required>
+                                            
+                                        <button type="submit"><a href="index.html">Login!</a></button>
+                                        </div>
+                                    
+                                        <div class="container" style="background-color:#f1f1f1">
+                                        <center><button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button></center>
+                                        </div>
+                                    </form>
+                                    </div>
+                                    <!--end-->
+        
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </header>
+
+        
+
+                <div id="myBtnContainer">
+                        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                        <button class="btn" onclick="filterSelection('horror')"> Horror</button>
+                        <button class="btn" onclick="filterSelection('science_fiction')"> Science Fiction</button>
+                        <button class="btn" onclick="filterSelection('action')"> Action</button>
+                        <button class="btn" onclick="filterSelection('drama')"> Drama</button>
+                        <button class="btn" onclick="filterSelection('thriller')"> Thriller</button>
+                      </div>
+
+        
+
+
+    <div class="displayer">
+        <div class="row">
+            <div class="column">
+                <div class="base">
+                <div class="filterDiv horror">
+                    <a href="movie_1_midsommar.html"><img id="home_picture" src="images/midsommar.jpg" alt="Midsommar" class="base_image"/></a>
+                    <div class="overlay">
+                        <div class="info">
+                            <a href="movie_1_midsommar.html">Midsommar</a>
+                            <br><img id="stars-2" src="images/4.5 out of 5.png" />
+                            <br>Genre: <a href="genres.html">Horror</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="column">  
+                <div class="base">
+                        <div class="filterDiv science_fiction">
+                    <a href="movie_5_high_life.html"><img id="home_picture"src="images/high_life.jpg" alt="High Life" class="base_image" /></a> 
+                    <div class="overlay">
+                        <div class="info"> 
+                            <a href="movie_5_high_life.html">High Life</a>
+                            <br><img id="stars-2" src="images/3.5 out of 5.png" />
+                            <br>Genre: <a href="genres.html">Science Fiction</a>
+                        </div>
+                    </div>
+                </div>
+                </div>    
+            </div> 
+            <div class="column">
+                <div class="base">
+                        <div class="filterDiv action">
+                    <a href="movie_10_joker.html"><img id="home_picture" src="images/joker.jpg" alt="Joker" class="base_image" /></a> 
+                    <div class="overlay">
+                        <div class="info">
+                            <a href="movie_10_joker.html">Joker</a>
+                            <br><img id="stars-2" src="images/3.5 out of 5.png"/>
+                            <br>Genre: <a href="genres.html">Action</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="column">  
+                <div class="base">
+                        <div class="filterDiv drama">         
+                    <a href="movie_2_climax.html"><img id="home_picture" src="images/climax.jpg" alt="Climax" class="base_image"/></a>
+                    <div class="overlay">
+                        <div class="info">
+                            <a href="movie_2_climax.html">Climax</a>
+                            <br><img id="stars-2" src="images/4 out of 5.png" />
+                            <br>Genre: <a href="genres.html">Drama</a>
+                        </div>
+                    </div>
+                </div>
+                </div>                    
+            </div>
+            <div class="column">  
+                <div class="base">
+                        <div class="filterDiv drama">
+                    <a href="movie_9_the _goldfinch.html"><img id="home_picture" src="images/the_goldfinch.jpg" alt="The Goldfinch" class="base_image"/></a> 
+                    <div class="overlay">
+                        <div class="info">
+                            <a href="movie_9_the _goldfinch.html">The Goldfinch</a>
+                            <br><img id="stars-2" src="images/2 out of 5.png" />
+                            <br>Genre: <a href="genres.html">Drama</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="column"> 
+                <div class="base">   
+                        <div class="filterDiv drama">        
+                    <a href="movie_6_portrait_of_a_lady_on_fire.html"><img id="home_picture"src="images/portrait_of_a_lady_on_fire.jpg" 
+                        alt="Portrait of a Lady on Fire" class="base_image"/></a> 
+                    <div class="overlay">
+                        <div class="info">
+                            <a href="movie_6_portrait_of_a_lady_on_fire.html">Portrait of a Lady on Fire</a>
+                            <br><img id="stars-2" src="images/5 out of 5.png" />
+                            <br>Genre: <a href="genres.html">Drama</a>
+                        </div>
+                    </div>
+                </div>
+                </div>             
+            </div>
+            <div class="column"> 
+                <div class="base"> 
+                        <div class="filterDiv drama">
+                    <a href="movie_8_the_lighthouse.html"><img id="home_picture" src="images/lighthouse.jpg" alt="The Lighthouse" class="base_image"/></a> 
+                    <div class="overlay">
+                        <div class="info"> 
+                            <a href="movie_8_the_lighthouse.html">The Lighthouse</a>
+                            <br><img id="stars-2" src="images/5 out of 5.png" />
+                            <br>Genre: <a href="genres.html">Drama</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+                <div class="column"> 
+                    <div class="base"> 
+                            <div class="filterDiv thriller">
+                        <a href="movie_3_good_time.html"><img id="home_picture" src="images/good_time.jpg" alt="Good Time" class="base_image" /></a>
+                        <div class="overlay">
+                            <div class="info">
+                                <a href="movie_3_good_time.html">Good Time</a>
+                                <br><img id="stars-2" src="images/4 out of 5.png" />
+                                <br>Genre: <a href="genres.html">Thriller</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="base">  
+                            <div class="filterDiv thriller">
+                        <a href="movie_7_parasite.html"><img id="home_picture" src="images/parasite.jpg" alt="Parasite" class="base_image"/></a>
+                        <div class="overlay">
+                            <div class="info">
+                                <a href="movie_7_parasite.html">Parasite</a>
+                                <br><img id="stars-2" src="images/5 out of 5.png" />
+                                <br>Genre: <a href="genres.html">Thriller</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="base">
+                            <div class="filterDiv thriller">
+                        <a href="movie_4_uncut_gems.html"><img id="home_picture" src="images/uncut_gems.jpg" alt="Uncut Gems" class="base_image"/></a>
+                        <div class="overlay">
+                            <div class="info"> 
+                                <a href="movie_4_uncut_gems.html">Uncut Gems</a>
+                                <br><img id="stars-2" src="images/4.5 out of 5.png" />
+                                <br>Genre: <a href="genres.html">Thriller</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+        </div>
+
+        <center>Please Select a Genre to Filter Movie Results</center>
+
+       
+        
+
+    </main>
+</body>
+</html>
