@@ -1,6 +1,9 @@
 # CS146-Website
 CS147 Website Project 2019
 
-This is the FINAL Website
-
-Do not edit
+Team Members 
+Grace Mattern 
+Kevin Ha
+Lily Haynes
+Nicholas Soriano
+Arushi Garg
